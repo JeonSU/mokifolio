@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <link rel="shortcut icon" href="resource/img/favicon.ico">
+    <link rel="stylesheet" href="resource/css/main.css">
+    <link rel="stylesheet" href="resource/css/sub.css">    
+
+    <link rel="stylesheet" href="resource/css/animsition.min.css">
+   
+    
+
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src='https://<cdnjs class="clo"></cdnjs>udflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>  
+    <script type="text/javascript" src="/resource/front/js/jquery/jquery.easeScroll.js"></script>        
+
+    <!-- animsition.js -->
+    <script src="resource/js/animsition.min.js"></script>
+    <script src="resource/script/parallax.js-1.5.0/parallax.js"></script>
+
+    <meta charset="UTF-8">
+    <title>mokifolio</title>
+
+</head>
+
+<body>
+    <div class="animsition-overlay" data-animsition-overlay="true" ></div>
+         <div class="mainwrap"> 
+             
+             
+      <!--GNB 고정영역시작-->                   
+                <div class="gnb"><center>
+                      <div style="width: 10%; height: 80px; float: left "></div>
+                       <div class="gnb_wrap">
+                                <div class="gnblogo_wrap">
+                                        <a href="../index.html"  class=" animsition-link"><div class="gnblogo"></div></a>
+                                </div>
+                                 <button class="menu-button" type="button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                 </button>
+                                <nav class="nav">
+                                  <ul class="nav-list">
+                                    <center><a href="html/about.html" class="animsition-link"><li class="nav-item" style="margin-top: 180px;">ABOUT ME</li></a><br><div class="nav-txt">문득 제가 궁금해지셨을 때</div></center>
+                                    <center><a href="html/port_main.html" class="animsition-link"><li class="nav-item">PORTFOLIO</li></a><br><div class="nav-txt">저의 능력을 보고 싶으실 때</div></center>
+                                    <center><a href="html/contact.html" class="animsition-link"><li class="nav-item">CONTECT</li></a><br><div class="nav-txt" >소중한 연락을 주시고 싶을 때</div></center>
+                                  </ul>
+                                </nav>
+
+                           
+                                    <div class="gnbmenu"></div>
+                        </div></center>
+                         <div style="width: 10%; height: 80px; float: left;"></div>
+                </div>
+
+        <!--/////GNB 고정영역끝/////-->      
+
+                  
+             
+        <!--컨텐츠 시작-->          
+                <div style= "width: 1920px; height:250px;"></div>
+                <div class="main_con1"></div>
+                <div style= "width: 1920px; height:40px;"></div>
+                <div class="btn_wrap"><center><a href="html/port_main.html" class=" animsition-link">
+                   <div class="btn_main">
+                        <div class="btn_txt">들어가기</div>
+                    </div>
+                </a></center></div>
+                <div style= "width: 1920px; height:80px;"></div>
+                 <center>
+                <p style="font-size:9pt; color: #b6acdc; opacity: 0.8;">
+                  이 사이트는 chrome 브라우저 1920 x 1080 사이즈에 최적화 되어있습니다.
+                </p>
+                </center>
+        </div>
+        <!--/////컨텐츠 끝/////-->
+    
+    
+    
+    
+        <!--/////백그라운드 영상/////-->          
+        <div class="bgmov">
+            
+           <video width="1920px" height="1080px" style="visibility: visible;" src="resource/img/00_index/first_mov.mp4"  preload="auto" autoplay="autoplay" muted="" loop="true"> </video>
+        </div>
+
+    
+    
+     <!--/////페이지 트렌지션 스크립트/////--> 
+    
+        <script>
+            $(document).ready(function() {
+              $(".animsition-overlay").animsition({
+                inClass: 'overlay-slide-in-bottom',
+                outClass: 'overlay-slide-out-bottom',
+                zIndex: 999,
+                inDuration: 1200,
+                outDuration: 600,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: [ 'animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay : true,
+                overlayClass : 'animsition-overlay-slide',
+                overlayParentElement : 'body',
+                transition: function(url){ window.location.href = url; }
+              });
+            });    
+        
+        
+    </script>
+        
+        
+        
+        
+         <!--////햄버거메뉴 스크립트/////--> 
+   <script>
+       const menuButton = document.querySelector(".menu-button")
+const nav = document.querySelector(".nav")
+
+menuButton.addEventListener("click", () => {
+  menuButton.classList.toggle("menu-button--open")
+  nav.classList.toggle("nav--open")
+})
+    </script>   
+    
+
+                  
+    
+    
+
+</body>
+</html>

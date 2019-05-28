@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <style type="text/css">
+    
+        #box2{
+            width:100px; 
+            height:100px;
+            background-color:#494949; 
+            transition:.4s ease-in-out;
+        }
+    
+        
+    
+    </style>
+</head>
+<p>Hover over the checkbox to simulate a mouse-click.</p>
+
+<form>
+  <input type="checkbox" id="myCheck" onclick="myFunction()">
+  <div id="box" style="width:100px; height:100px; background-color:#494949; transition:.4s ease-in-out;"></div>    
+    <p></p>
+    
+    
+    
+  <div id="box2"></div>
+</form>
+
+
+
+<script>
+var box2 = document.getElementById('box2');    
+    
+$('box2').onclick(function()){
+                   $('box2').style.width = "300px";
+                   }
+    
+    
+function myFunction() {
+	document.getElementById("box").style.width = "300px";
+    return false;
+}
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:200,300,400,700|Roboto:300,900');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+body {
+    margin: 0px;
+    overflow-x:hidden;
+    font-family:'Noto Sans KR', sans-serif;
+    letter-spacing: -0.9pt;
+           }
+
+::-moz-selection { background-color:#8900FA; color: #fff; } 
+::selection { background-color: #8900FA; color: #fff; }
+
+
+.mainwrap{
+    width: 1920px;
+    height: 1080px; 
+    z-index: 1;
+    position: absolute;
+    
+}
+.gnb_wrap{
+    width: 80%;
+    height: 80px;
+    float: left;
+    z-index: 99;
+}
+.gnb{
+    height: 80px;
+    width: 1920px;
+    position: fixed;
+    z-index: 99;
+}
+.gnblogo_wrap{
+    width: 95px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+.gnblogo{
+    width: 95px;
+    height: 35px;
+    background-image: url(../img/logo.png);   
+    margin-top: 15px;
+    z-index: 220;
+    position: relative;
+
+}
+#gnbmenu_wrap{
+    width: 80px;
+    height: 80px;
+    padding-top: 5px;
+    display: inline-block;
+    float: right;
+}
+#gnbmenu{
+    width: 62px;
+    height: 62px;
+    z-index: 220;
+    position: relative;
+    padding-right: 50px;
+  -webkit-transition: .5s ease-in-out;    
+  transition: .5s ease-in-out;    
+}
+#gnbmenu:hover {
+    background-color:#5a00ff;
+
+}
+
+
+#gnbmenu.menutransition {
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  border-radius: 0;    
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .5s ease-in-out;    
+  transition: .5s ease-in-out;
+  background-color:   #5a00ff;  
+}
+
+.bgmov{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+
+
+/*------------------공통 css------------------*/
+
+
+
+
+/*------------------index 컨텐츠 시작------------------*/
+
+
+.main_con1{
+    width: 971px;
+    height: 274px;
+    background-image:  url(../img/00_index/index_title2.png);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.btn_wrap{
+    width: 1920px;
+    margin: auto;
+}
+.btn_main {
+    z-index: 444;
+	text-decoration:none;
+	text-align:center;
+    vertical-align: bottom;
+	display:inline-block;
+	font-size:14px;
+    color:#ffffff;
+    background-color: #5a00ff;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    margin: auto;
+  -webkit-transition: .5s ease-in-out;    
+  transition: .5s ease-in-out;    
+ }
+
+.btn_main:hover {
+    background-color: white;
+    color: #5a00ff;
+    transform: scale(1.2);
+}
+
+.btn_main:active {
+    background-color: #5a00ff;
+    color: #ffffff;
+    transform: scale(1);
+    text-decoration: none;
+    border: 0;
+}
+
+
+.btn_txt{
+    margin-top: 15px;    
+}
+
+
+
+
+
+/*------------------index 컨텐츠 끝------------------*/
+
+
+/*------------------port_main 컨텐츠 시작------------------*/
+
+
+
+
+.port_list_wrap{
+    width: 1200px;
+    height: 4000px;
+
+ 
+}
+.port_list_verform{
+    width: 595px;
+    height: 4000px;
+    float: left;
+}
+
+
+
+.thumbimg{
+    width: 580px;
+    height: 480px;
+    margin: 15px 15px 15px 0;
+    position: relative;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.thumbimg_overlay{
+   position: absolute;
+    width: 580px;
+    height: 480px;
+  opacity: 0;
+    float: left;
+  -webkit-transition: .5s ease-in-out;    
+  transition: .5s ease-in-out;
+  background-color: #8900FA;
+      
+}
+
+
+
+.thumbimg:hover{
+    transform: scale(1.06); 
+    z-index: 999;
+}
+.thumbimg:hover .thumbimg_overlay{
+
+    opacity: 0.8;
+}
+
+
+
+.thumbimg:hover .thumbtxt{
+    opacity: 1;
+}
+
+
+
+.thumb_maintxt {
+font-family:'Noto Sans KR', sans-serif;
+    font-weight: 700;
+  color: white;
+ width: 580px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumb_subtxt {
+    
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  opacity: 0.4;  
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  text-align: center;
+    z-index: 4;
+}
+
+.thumbtxt{
+    opacity: 0;
+}
+
+
+.btn_download{
+    width: 140px; 
+    height: 40px; 
+    border: 1px; 
+    border-style: solid; 
+    border-color: white;
+    color: white;
+    font-size: 10pt;
+    padding-top: 10px;
+  -webkit-transition: .3s ease-in-out;    
+  transition: .3s ease-in-out;
+}
+
+
+.btn_download:hover{
+    background-color: #5a00ff;
+
+
+}
+
+
+
+
+/*---햄버거 오픈---*/
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100vh;
+  background: #770bda;
+  box-shadow: 2px 2px 6px #444;
+  transition: all .5s;
+    opacity: 0;
+    display: ;
+}
+
+.nav--open {
+  transform: translateX(0);
+    display: inherit;
+    opacity: 0.9;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 40px 15px;
+}
+
+.nav-item{
+  color: #ddd;
+  font-size: 42px;
+  margin: 120px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0pt;
+    transition: .2s ease-in-out;
+
+}
+.nav-item:hover{
+    color: #ffea00;
+    font-size: 46px;
+    text-decoration: underline ;
+    letter-spacing: 2pt;
+   
+}
+.nav-txt{
+
+     font-size: 11pt;
+    font-weight: 300;
+    color: white;
+    line-height: 20pt;
+    letter-spacing: -1.2pt;
+    opacity: 0.5;
+    margin-top: -20px;
+
+        
+}
+
+.menu-button {
+    color: white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 17px;
+  left: 15px;
+  background: none;
+  border: none;
+  transition: .5s ease-in-out;
+  z-index: 1;
+    float: right;
+
+}
+
+.menu-button:hover{
+  cursor: pointer;
+}
+
+.menu-button span{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ddd;
+  border-radius: 9px;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+span:nth-child(1){
+  top: 0;
+}
+
+span:nth-child(2), span:nth-child(3){
+  top: 12px;
+}
+
+span:nth-child(4){
+  top: 24px;
+}
+
+.menu-button--open span{
+  transition: .25s ease-in-out;
+}
+
+.menu-button--open span:nth-child(1){
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu-button--open span:nth-child(2){
+  transform: rotate(45deg);
+}
+
+.menu-button--open span:nth-child(3){
+  transform: rotate(-45deg);
+}
+
+.menu-button--open span:nth-child(4){
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+

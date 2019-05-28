@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <style type="text/css">
+       body{
+           margin: 0;
+       }
+       #box{
+           position: relative;
+            margin-top: 200px;
+           width: 800px;
+           height: 400px;
+           background-color: aquamarine;
+       }
+    .thumbimg_overlay{
+       position: absolute;
+        width: 800px;
+        height: 400px;
+      opacity: 0;
+        float: left;
+      -webkit-transition: .5s ease-in-out;    
+      transition: .5s ease-in-out;
+      background-color: #8900FA;     
+        z-index: 5;
+       }
+       
+             
+       .thumbimg_overlay:hover{
+           opacity: 0.8;
+       }
+       
+       
+       .menu-expanded{
+              height: 1920px;
+               width: 1080px;
+           background-color: #8900FA; 
+           transition: all .25s;
+           z-index: 6;
+       }
+
+    </style>
+   
+   
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <a href="#"><div style="width: 800px; height: 400px;" >
+        <div id="box">
+        <div class="thumbimg_overlay"></div>
+        </div>
+    </div>
+    </a>
+    
+    
+    <script>
+        $(".thumbimg_overlay").click(function() {
+  $(this).toggleClass("menu-expanded");
+});
+        </script>
+    
+    
+    
+</body>
+</html>
